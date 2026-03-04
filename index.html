@@ -7,64 +7,47 @@
     <title>Project Assignment W0W1-Module 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <div class="header">
-        <h1>Antonius</h1>
-        <nav class="navbar">
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+          <a class="brand" href="#home">Antonius</a>
+
           <ul>
-            <li><a href="mailto:antonius@example.com">antonius@example.com</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="photos.html">Photos</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </div>
     </header>
+
     <main>
-      <section id="home" class="aboutme-container">
+      <section id="home" class="hero">
+        <div class="hero-inner">
+          <article class="hero-text">    
+            <p>Hi, I'm Antonius</p>
+            <h1>FRONT<span class="charm-font">END</span></h1>
+            <h1>DEVELOPER</h1>
+            <p>
+              Passionate about frontend development, I focus on crafting digital products that are visually polished, performance-optimized, and deliver a consistent experience across all platforms.
+            </p>   
+              
+            
+          </article>
+          <div class="hero-media">
             <img
             class="portrait"
-            src="assets/Portrait of a Young Man 1.png"
+            src="assets/portrait.svg"
             alt="Photograph of Antonius"
             />
             <!-- Placed for your photograph-->
-
-          <article class="aboutme-text">
-              <h3>
-                Hi, I’m Antonius <br />
-                — a project management and quality systems professional in construction
-                industry, with over more than 10 years of experience, now transitioning
-                into front-end web development.
-              </h3>
-              
-              <p class="aboutme">
-                I bring structured thinking, attention to detail, and a problem-solving
-                mindset into every digital project I build. Currently focused on
-                crafting clean, responsive landing pages using native HTML and CSS, I
-                believe great websites should be simple, purposeful, and reliable. I’m
-                always learning, always improving, and always ready to build something
-                meaningful.
-              </p>
-              
-              <div class="social-icons">
-                  <img src="assets/Dribble.svg" alt="Dribbble logo" />
-                  <img src="assets/LinkedIn.svg" alt="LinkedIn logo" />
-                  <img
-                    src="assets/Instagram.svg"
-                    alt="Instagram logo"
-                  />
-              </div>
-          </article>  
+          </div>
+        </div>  
       </section>  
       
 
@@ -150,7 +133,7 @@
           <li>Building a Modern Online Marketplace from Scratch</li>
         </ul>
     </main>
-
+    
       <footer>
         <p>&copy; 2024 Antonius. All rights reserved.</p>
         <p>PAGES</p>
