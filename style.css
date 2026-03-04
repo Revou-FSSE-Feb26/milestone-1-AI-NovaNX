@@ -21,8 +21,8 @@ body {
 }
 
 .portrait {
-  width: 400px;
-  border-radius: 50%;
+  width: 200px;
+  border-radius: 10%;
 }
 
 .aboutme-container {
@@ -30,7 +30,12 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 140px;
+}
+
+.aboutme-text {
+  max-width: 600px;
+  margin-left: 20px;
 }
 
 .portfolio-container {
