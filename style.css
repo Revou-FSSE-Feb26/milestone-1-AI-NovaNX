@@ -104,6 +104,14 @@ body {
   font-color: #ffff;
 }
 
+.hero-title-line {
+  display: block;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 140px;
+  letter-spacing: -0.03em;
+}
+
 .charm-font {
   font-family: "Charm", cursive;
   font-weight: 400;
@@ -149,6 +157,10 @@ body {
   padding: 20px;
 }
 
+.portfolio-container figure {
+  margin: 0;
+}
+
 .portfolio-container img {
   width: 100%;
   height: auto;
@@ -163,6 +175,10 @@ body {
   padding: 20px;
 }
 
+.photos-container figure {
+  margin: 0;
+}
+
 /* semua foto di grid */
 .photos-container img {
   width: 100%;
@@ -170,6 +186,6 @@ body {
   object-fit: cover;
 }
 
-.photos-container img:nth-child(n + 5) {
+.photos-container figure:nth-child(n + 5) img {
   height: 100%;
 }
