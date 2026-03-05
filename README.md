@@ -1,1 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2AGu9A8s)
+# Personal Portfolio Website
+
+A simple **personal portfolio website** using **native HTML and CSS**
+This project was created to showcase personal information, skills, and projects in a clean  and responsive layout without relying on any frameworks or external libraries.
+
+The goal of this project is to demonstrate a solid understanding of **fundamental web development concepts**, including semantic HTML structure, responsive layout techniques, and clean CSS styling.

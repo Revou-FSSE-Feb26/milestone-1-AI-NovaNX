@@ -29,7 +29,7 @@
     <main>
       <section id="home" class="hero">
         <div class="hero-inner">
-          <article class="hero-text">    
+          <div class="hero-text">    
             <p>Hi, I'm Antonius</p>
             <h1>FRONT<span class="charm-font">END</span></h1>
             <h1>DEVELOPER</h1>
@@ -38,7 +38,7 @@
             </p>   
               
             
-          </article>
+          </div>
           <div class="hero-media">
             <img
             class="portrait"
@@ -135,23 +135,50 @@
     </main>
     
       <footer>
-        <p>&copy; 2024 Antonius. All rights reserved.</p>
+
+        <form>
+          <fieldset>
+              <legend>Contact Us</legend>
+              <label for="name">Name:</label><br>
+              <input placeholder="Enter your name" id="name" name="name" required><br><br>
+
+              <label for="email">Email:</label><br>
+              <input placeholder="Enter your email" type="email" id="email" name="email" required><br><br>
+
+              <label for="message">Message:</label><br>
+              <textarea placeholder="Enter your message" id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+              
+              <label for="contact_reason">Reason for Contact:</label><br>
+              <select name="contact_reason" required>
+                  <option value="">Select a reason for contact</option>
+                  <option value="support">Support</option>
+                  <option value="live_demo">Live Demo</option>
+                  <option value="feedback">Feedback</option>
+              </select><br><br>    
+                  <label for="contact_method">Preferred Contact Method:</label><br>   
+                      <input type="radio" name="contact_method" value="email" required>email</input>
+                      <input type="radio" name="contact_method" value="phone" required>Phone</input>
+                  <br><br>
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+          </fieldset>
+        </form>
+
         <p>PAGES</p>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="photos.html">Photos</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="portfolio">Blog</a></li>
+          <li><a href="photos">Photos</a></li>
         </ul>
 
         <p>GET IN TOUCH</p>
         <ul>
-          <li><a href="mailto:antonius@example.com">Email</a></li>
           <li><a href="https://www.linkedin.com/in/antonius">LinkedIn</a></li>
           <li><a href="https://dribbble.com/antonius">Dribbble</a></li>
           <li><a href="https://www.instagram.com/antonius">Instagram</a></li>
         </ul>
+        <p>&copy; 2026 Antonius. All rights reserved.</p>
       </footer>
   </body>
 </html>
