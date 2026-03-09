@@ -18,8 +18,11 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 
 - Clean and minimal user interface
 - Semantic HTML Structure
-- Portfolio showcase section
-- Contact information section
+- using aria-label in main navigation
+- Using Google Fonts : Inter and Charm
+- Sticky/absolute header using tranparent visual effect
+- Using CSS Grid for Portfolio showcase section
+- Contact form using fieldset, legend, radio button for preferred contact method, dropdown reason for contact
 
 ---
 

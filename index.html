@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,18 +21,22 @@
 
   <body>
     <header class="site-header">
-      <nav class="nav" aria-label="Primary">
+
+      <nav class="nav" aria-label="Main Navigation">
         <a class="brand" href="#home">Antonius</a>
 
         <ul>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
     </header>
 
     <main>
+
       <section id="home" class="hero">
         <div class="hero-inner">
           <div class="hero-text">
@@ -57,7 +62,7 @@
         </div>
       </section>
 
-      <article id="about">
+      <section id="about">
         <h2>About Me</h2>
         <h3>. I turn ideas and design into functional, accessible, and performant websites using modern technologies.</h3>
         <p>
@@ -67,7 +72,9 @@
           ensuring that every project I work on is not only visually appealing
           but also highly functional and accessible to all users.
         </p>
+      </section>
 
+      <section id="skills"> 
         <h2>Skills</h2>
         <ul>
           <li>Educational Background: Magister Management of Information Systems</li>
@@ -75,90 +82,76 @@
           <li>Technical Skills: HTML, CSS, JavaScript, Responsive Design, Version Control (Git)</li>
           <li>Soft Skills: Problem-Solving, Communication, Team Collaboration, Time Management</li>
           <li>Languages: English (Fluent), Indonesian (Native)</li>
+        </ul>
+      </section>
 
-      </article>
-
-      <article id="portfolio">
+      <section id="portfolio">
         <h2>My Portfolio</h2>
         <div class="portfolio-container">
-          <figure>
+          <article class="portfolio-item">
             <img src="assets/Portfolio1.svg" alt="Portfolio 1" />
-            <figcaption>
-              <h4>Responsive Landing Page</h4>
+              <h3>Responsive Landing Page</h3>
               <p class="portfolio">
                 A clean and modern landing page built using native HTML and CSS,
                 focused on responsive layout, structured design, and smooth user
                 experience across devices.
               </p>
-            </figcaption>
-          </figure>
-          <figure>
+          </article>
+          <article class="portfolio-item">
             <img src="assets/Portfolio2.svg" alt="Portfolio 2" />
-            <figcaption>
-              <h4>Web Interface Project</h4>
+              <h3>Web Interface Project</h3>
               <p class="portfolio">
                 A user-friendly web interface designed to enhance user
                 interaction and streamline navigation, built with a focus on
                 accessibility and responsive design.
               </p>
-            </figcaption>
-          </figure>
-
-          <figure>
+          </article>
+          <article class="portfolio-item">
             <img src="assets/Portfolio3.svg" alt="Portfolio 3" />
-            <figcaption>
-              <h4>UI Component Showcase</h4>
+              <h3>UI Component Showcase</h3>
               <p>
                 A collection of reusable UI components designed to maintain
                 consistency and improve development efficiency, built with a
                 focus on modularity and scalability.
               </p>
-            </figcaption>
-          </figure>
-          <figure>
+          </article>
+          <article class="portfolio-item">
             <img src="assets/Portfolio4.svg" alt="Portfolio 4" />
-            <figcaption>
-              <h4>Front-End Layout Exploration</h4>
+              <h3>Front-End Layout Exploration</h3>
               <p>
                 An exploration of front-end layout techniques, focusing on
                 responsive design, grid systems, and flexible layouts to create
                 visually appealing and functional web pages.
               </p>
-            </figcaption>
-          </figure>
-          <figure>
+          </article>
+          <article class="portfolio-item">
             <img src="assets/Portfolio5.svg" alt="Portfolio 5" />
-            <figcaption>
-              <h4>Product Showcase Web Page</h4>
+              <h3>Product Showcase Web Page</h3>
               <p>
                 A web page designed to showcase products effectively,
                 highlighting key features and benefits, built with a focus on
                 visual appeal and user engagement.
               </p>
-            </figcaption>
-          </figure>
-          <figure>
+          </article>
+          <article class="portfolio-item">
             <img src="assets/Portfolio6.svg" alt="Portfolio 6" />
-            <figcaption>
-              <h4>Mobile-First Responsive Interface</h4>
+              <h3>Mobile-First Responsive Interface</h3>
               <p class="portfolio">
                 A mobile-first responsive interface designed to provide an
                 optimal user experience on all devices, with a focus on
                 intuitive navigation and fast loading times.
               </p>
-            </figcaption>
-          </figure>
+          </article>
         </div>
-      </article>
-    </main>
+      </section>
 
-    <footer>
       <section id="contact">
         <form>
           <fieldset>
             <legend>Contact Us</legend>
             <label for="name">Name:</label><br />
             <input
+              type="text"
               placeholder="Enter your name"
               id="name"
               name="name"
@@ -176,6 +169,7 @@
 
             <label for="message">Message:</label><br />
             <textarea
+              type="text"  
               placeholder="Enter your message"
               id="message"
               name="message"
@@ -216,11 +210,16 @@
         </form>
       </section>
 
+    </main>
+
+    <footer>
+      
       <p>QUICK LINKS</p>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <p>GET IN TOUCH</p>
@@ -231,5 +230,7 @@
       </ul>
       <p>&copy; 2026 Antonius. All rights reserved.</p>
     </footer>
+
   </body>
+
 </html>
