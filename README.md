@@ -9,10 +9,9 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 
 ## Preview
 
-![Portfolio](assets/preview.png)
+![Portfolio](public/preview.png)
 
 ---
-
 
 ## Features
 
@@ -30,17 +29,17 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 
 This project intentionally uses **pure web fundamentals**
 
-| Technology | Description |
-|-----------|-------------|
-| HTML5 | Structure of the web pages |
-| CSS3 | Styling, layout, and responsiveness |
-| Flexbox / Grid | Layout management |
+| Technology     | Description                         |
+| -------------- | ----------------------------------- |
+| HTML5          | Structure of the web pages          |
+| CSS3           | Styling, layout, and responsiveness |
+| Flexbox / Grid | Layout management                   |
 
 Explanation:
 
-- **index.html** → Main entry page of the website  
-- **style.css** → Main stylesheet for all styling rules  
-- **assets/** → Folder containing images and icons used in the website  
+- **index.html** → Main entry page of the website
+- **style.css** → Main stylesheet for all styling rules
+- **public/** → Folder containing images and icons used in the website
 - **README.md** → Documentation of the project
 
 ---
@@ -67,7 +66,7 @@ cd milestone-1-AI-NovaNX
 
 ### 3. Open the project
 
-Open ```index.html``` directly in your browser
+Open `index.html` directly in your browser
 
 For a better development experience you can also run the project using VS Code Live Server
 
@@ -76,6 +75,7 @@ For a better development experience you can also run the project using VS Code L
 ## Learning Goals
 
 This project focuses on strengthening the following skills:
+
 - Writing clean **semantic HTML**
 - Creating layouts using **CSS Flexbox and Grid**
 - Organizing project structure properly

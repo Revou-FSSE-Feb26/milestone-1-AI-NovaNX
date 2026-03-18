@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
-  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/AI-NovaNX-icon.png" />
+    <link rel="icon" href="public/AI-NovaNX-icon.png" />
     <title>Project Assignment W0W1-Module 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,22 +20,19 @@
 
   <body>
     <header class="site-header">
-
       <nav class="nav" aria-label="Main Navigation">
         <a class="brand" href="#home">Antonius</a>
 
         <ul>
-          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skill</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-
     </header>
 
     <main>
-
       <section id="home" class="hero">
         <div class="hero-inner">
           <div class="hero-text">
@@ -54,183 +50,379 @@
           <div class="hero-media">
             <img
               class="portrait"
-              src="assets/portrait.svg"
+              src="public/portrait.svg"
               alt="Photograph of Antonius"
             />
             <!-- Placed for your photograph-->
           </div>
         </div>
+        <a class="btn-primary" href="#contact">
+          <span> <img src="public/Mail.png" alt="Email Icon" /> </span>Hire Me
+        </a>
+
+        <section class="carousell">
+          <h4>Trusted by Global Innovators & Leading Brands</h4>
+          <div class="tech-slideshow">
+            <div class="mover-1"></div>
+          </div>
+        </section>
       </section>
 
       <section id="about">
-        <h2>About Me</h2>
-        <h3>. I turn ideas and design into functional, accessible, and performant websites using modern technologies.</h3>
-        <p>
-          With a strong foundation in HTML, CSS, and JavaScript, I specialize in
-          creating responsive and user-friendly web interfaces. I am passionate
-          about translating design concepts into seamless digital experiences,
-          ensuring that every project I work on is not only visually appealing
-          but also highly functional and accessible to all users.
-        </p>
+        <h2 class="about-me">
+          I turn ideas and design into functional, accessible, and performant
+          websites <span>using modern technologies.</span>
+        </h2>
+        <div class="media-social">
+          <h3>About Me</h3>
+          <div class="media-social-icon">
+            <a
+              href="https://facebook.com/antonius"
+              aria-label="Facebook Profile"
+            >
+              <img src="public/Facebook.svg" alt="Facebook Icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/antonius"
+              aria-label="Instagram Profile"
+            >
+              <img src="public/Instagram.svg" alt="Instagram Icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/antonius"
+              aria-label="LinkedIn Profile"
+            >
+              <img src="public/Linkedin.svg" alt="LinkedIn Icon" />
+            </a>
+            <a
+              href="https://dribbble.com/antonius"
+              aria-label="Dribbble Profile"
+            >
+              <img src="public/Dribble.svg" alt="Dribbble Icon" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section id="about2">
+        <img src="public/typing.svg" alt="Man typing on a laptop" />
+        <div class="about2-cards">
+          <div class="item1">
+            <img
+              src="public/frontend-development.png"
+              alt="Frontend Development Icon"
+            />
+            <h3>Frontend Development</h3>
+            <p>
+              I build responsive, accessible, and scalable websites using modern
+              frontend tools and best practices.
+            </p>
+          </div>
+          <div class="item2">
+            <img src="public/web-performance.png" alt="Web Performance Icon" />
+            <h3>Web Performance</h3>
+            <p>
+              I optimize websites for speed and efficiency to ensure smooth
+              experiences across all devices.
+            </p>
+          </div>
+          <div class="item3">
+            <img
+              src="public/component-based-ui.png"
+              alt="Component-Based UI Icon"
+            />
+            <h3>Component-Based UI</h3>
+            <p>
+              I specialize in crafting reusable UI components that are clean,
+              maintainable, and aligned with design systems.
+            </p>
+          </div>
+          <div class="item4">
+            <img src="public/responsive.png" alt="Responsive Design Icon" />
+            <h3>Responsive Design</h3>
+            <p>
+              I ensure that every layout adapts beautifully to different screen
+              sizes — from mobile to desktop.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section id="skills"> 
-        <h2>Skills</h2>
-        <ul>
-          <li>Educational Background: Magister Management of Information Systems</li>
-          <li>Professional Experience: more than 10 years as a Quality Assurance Specialist in Building Construction</li>
-          <li>Technical Skills: HTML, CSS, JavaScript, Responsive Design, Version Control (Git)</li>
-          <li>Soft Skills: Problem-Solving, Communication, Team Collaboration, Time Management</li>
-          <li>Languages: English (Fluent), Indonesian (Native)</li>
-        </ul>
+      <section id="skills">
+        <div class="skill-title">
+          <div class="skill-title-text">
+            <h2>Tools I Use to Build</h2>
+            <p>
+              From code to design - here's the tech that helps me turn ideas
+              into real products
+            </p>
+          </div>
+             <a
+               class="btn-sendmessage"
+               href="#contact"
+             >
+               <span> <img src="public/Mail.png" alt="Mail Icon" /> </span>Send
+               Message
+             </a>
+        </div>
+        <div class="skill-list">
+          <div class="skill-container">
+            <div class="skill-item">
+              <img src="public/Tech-Icon/html5.png" alt="HTML5 Icon" /><span
+                >HTML</span
+              >
+            </div>
+            <div class="skill-rate">
+              <p>100%</p>
+            </div>
+          </div>
+          <div class="skill-container">
+            <div class="skill-item">
+              <img src="public/Tech-Icon/css.png" alt="CSS3 Icon" /><span
+                >CSS</span
+              >
+            </div>
+            <div class="skill-rate">
+              <p>90%</p>
+            </div>
+          </div>
+          <div class="skill-container">
+            <div class="skill-item">
+              <img src="public/Tech-Icon/JS.png" alt="JavaScript Icon" /><span
+                >JavaScript</span
+              >
+            </div>
+            <div class="skill-rate">
+              <p>90%</p>
+            </div>
+          </div>
+          <div class="skill-container">
+            <div class="skill-item">
+              <img src="public/Tech-Icon/ts.png" alt="TypeScript Icon" /><span
+                >TypeScript</span
+              >
+            </div>
+            <div class="skill-rate">
+              <p>80%</p>
+            </div>
+          </div>
+          <div class="skill-container">
+            <div class="skill-item">
+              <img src="public/Tech-Icon/React.svg" alt="React Icon" /><span
+                >React</span
+              >
+            </div>
+            <div class="skill-rate">
+              <p>75%</p>
+            </div>
+          </div>
+          <div class="skill-container">
+            <div class="skill-item">
+              <img src="public/Tech-Icon/nextjs.png" alt="Next.js Icon" /><span
+                >Next.js</span
+              >
+            </div>
+            <div class="skill-rate">
+              <p>80%</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="portfolio">
-        <h2>My Portfolio</h2>
+        <h2>Bridging Design and Development</h2>
+        <p>
+          These are real project where I implemented frontend interfaces with
+          precision and attention to detail.
+        </p>
         <div class="portfolio-container">
           <article class="portfolio-item">
-            <img src="assets/Portfolio1.svg" alt="Portfolio 1" />
-              <h3>Responsive Landing Page</h3>
-              <p class="portfolio">
-                A clean and modern landing page built using native HTML and CSS,
-                focused on responsive layout, structured design, and smooth user
-                experience across devices.
-              </p>
+            <button
+              type="button"
+              class="portfolio-thumb"
+              aria-label="Focus project: Responsive Landing Page"
+            >
+              <img src="public/Portfolio1.svg" alt="Portfolio 1" />
+            </button>
+            <h3>Responsive Landing Page</h3>
+            <p class="portfolio">
+              A clean and modern landing page built using native HTML and CSS,
+              focused on responsive layout, structured design, and smooth user
+              experience across devices.
+            </p>
           </article>
           <article class="portfolio-item">
-            <img src="assets/Portfolio2.svg" alt="Portfolio 2" />
-              <h3>Web Interface Project</h3>
-              <p class="portfolio">
-                A user-friendly web interface designed to enhance user
-                interaction and streamline navigation, built with a focus on
-                accessibility and responsive design.
-              </p>
+            <button
+              type="button"
+              class="portfolio-thumb"
+              aria-label="Focus project: Web Interface Project"
+            >
+              <img src="public/Portfolio2.svg" alt="Portfolio 2" />
+            </button>
+            <h3>Web Interface Project</h3>
+            <p class="portfolio">
+              A user-friendly web interface designed to enhance user interaction
+              and streamline navigation, built with a focus on accessibility and
+              responsive design.
+            </p>
           </article>
           <article class="portfolio-item">
-            <img src="assets/Portfolio3.svg" alt="Portfolio 3" />
-              <h3>UI Component Showcase</h3>
-              <p>
-                A collection of reusable UI components designed to maintain
-                consistency and improve development efficiency, built with a
-                focus on modularity and scalability.
-              </p>
+            <button
+              type="button"
+              class="portfolio-thumb"
+              aria-label="Focus project: UI Component Showcase"
+            >
+              <img src="public/Portfolio3.svg" alt="Portfolio 3" />
+            </button>
+            <h3>UI Component Showcase</h3>
+            <p>
+              A collection of reusable UI components designed to maintain
+              consistency and improve development efficiency, built with a focus
+              on modularity and scalability.
+            </p>
           </article>
           <article class="portfolio-item">
-            <img src="assets/Portfolio4.svg" alt="Portfolio 4" />
-              <h3>Front-End Layout Exploration</h3>
-              <p>
-                An exploration of front-end layout techniques, focusing on
-                responsive design, grid systems, and flexible layouts to create
-                visually appealing and functional web pages.
-              </p>
+            <button
+              type="button"
+              class="portfolio-thumb"
+              aria-label="Focus project: Front-End Layout Exploration"
+            >
+              <img src="public/Portfolio4.svg" alt="Portfolio 4" />
+            </button>
+            <h3>Front-End Layout Exploration</h3>
+            <p>
+              An exploration of front-end layout techniques, focusing on
+              responsive design, grid systems, and flexible layouts to create
+              visually appealing and functional web pages.
+            </p>
           </article>
           <article class="portfolio-item">
-            <img src="assets/Portfolio5.svg" alt="Portfolio 5" />
-              <h3>Product Showcase Web Page</h3>
-              <p>
-                A web page designed to showcase products effectively,
-                highlighting key features and benefits, built with a focus on
-                visual appeal and user engagement.
-              </p>
+            <button
+              type="button"
+              class="portfolio-thumb"
+              aria-label="Focus project: Product Showcase Web Page"
+            >
+              <img src="public/Portfolio5.svg" alt="Portfolio 5" />
+            </button>
+            <h3>Product Showcase Web Page</h3>
+            <p>
+              A web page designed to showcase products effectively, highlighting
+              key features and benefits, built with a focus on visual appeal and
+              user engagement.
+            </p>
           </article>
           <article class="portfolio-item">
-            <img src="assets/Portfolio6.svg" alt="Portfolio 6" />
-              <h3>Mobile-First Responsive Interface</h3>
-              <p class="portfolio">
-                A mobile-first responsive interface designed to provide an
-                optimal user experience on all devices, with a focus on
-                intuitive navigation and fast loading times.
-              </p>
+            <button
+              type="button"
+              class="portfolio-thumb"
+              aria-label="Focus project: Mobile-First Responsive Interface"
+            >
+              <img src="public/Portfolio6.svg" alt="Portfolio 6" />
+            </button>
+            <h3>Mobile-First Responsive Interface</h3>
+            <p class="portfolio">
+              A mobile-first responsive interface designed to provide an optimal
+              user experience on all devices, with a focus on intuitive
+              navigation and fast loading times.
+            </p>
           </article>
         </div>
       </section>
 
       <section id="contact">
-        <form>
-          <fieldset>
-            <legend>Contact Us</legend>
-            <label for="name">Name:</label><br />
+        <div class="contact-title">
+          <form class="contact-form">
+            <h1>Let's <span>Build Something </span>Great</h1>
+            <p>
+              Got an idea, a project, or just want to connect? I'm always open
+              to new conversations.
+            </p>
+            <label for="name">Name</label>
             <input
               type="text"
               placeholder="Enter your name"
               id="name"
               name="name"
               required
-            /><br /><br />
+            />
 
-            <label for="email">Email:</label><br />
+            <label for="email">Email</label>
             <input
               placeholder="Enter your email"
               type="email"
               id="email"
               name="email"
               required
-            /><br /><br />
+            />
 
-            <label for="message">Message:</label><br />
+            <label for="message">Message</label>
             <textarea
-              type="text"  
               placeholder="Enter your message"
               id="message"
               name="message"
               rows="4"
               cols="50"
               required
-            ></textarea
-            ><br /><br />
+            ></textarea>
 
-            <label for="contact_reason">Reason for Contact:</label><br />
-            <select id="contact_reason" name="contact_reason" required>
-              <option value="">Select a reason for contact</option>
-              <option value="support">Support</option>
-              <option value="live_demo">Live Demo</option>
-              <option value="feedback">Feedback</option></select
-            ><br /><br />
+            <a
+              class="btn-sendmessage"
+              href="mailto:your-email@example.com?subject=Portfolio%20Inquiry"
+            >
+              <span> <img src="public/Mail.png" alt="Mail Icon" /> </span>Send
+              Message
+            </a>
+          </form>
+        </div>
 
-            <label>Preferred Contact Method:</label><br />
-            <input
-              type="radio"
-              id="contact_method_email"
-              name="contact_method"
-              value="email"
-              required
-            />
-            <label for="contact_method_email">Email</label>
-            <input
-              type="radio"
-              id="contact_method_phone"
-              name="contact_method"
-              value="phone"
-            />
-            <label for="contact_method_phone">Phone</label>
-            <br /><br />
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </fieldset>
-        </form>
+        <div class="contact-info">
+          <div class="quick-links">
+            <h2>Quick Link</h2>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+          </div>
+          
+          <div class="Social Media">
+            <h2>Social Media</h2>
+            <div class="media-social-icon">
+            <a
+              href="https://facebook.com/antonius"
+              aria-label="Facebook Profile"
+            >
+              <img src="public/Facebook.svg" alt="Facebook Icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/antonius"
+              aria-label="Instagram Profile"
+            >
+              <img src="public/Instagram.svg" alt="Instagram Icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/antonius"
+              aria-label="LinkedIn Profile"
+            >
+              <img src="public/Linkedin.svg" alt="LinkedIn Icon" />
+            </a>
+            <a
+              href="https://dribbble.com/antonius"
+              aria-label="Dribbble Profile"
+            >
+              <img src="public/Dribble.svg" alt="Dribbble Icon" />
+            </a>
+          </div>
+          </div>
+          <h3 class="get-in-touch">GET IN TOUCH</h3>
+        </div>
+        </div>  
       </section>
-
     </main>
 
-    <footer>
-      
-      <p>QUICK LINKS</p>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <p>GET IN TOUCH</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/antonius">LinkedIn</a></li>
-        <li><a href="https://dribbble.com/antonius">Dribbble</a></li>
-        <li><a href="https://www.instagram.com/antonius">Instagram</a></li>
-      </ul>
-      <p>&copy; 2026 Antonius. All rights reserved.</p>
+    <footer class="footer">
+      <h3>&copy; 2026 Antonius. All rights reserved.</h3>
     </footer>
-
   </body>
-
 </html>
