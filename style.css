@@ -12,6 +12,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 24px);
 }
 
 .site-header {
@@ -32,6 +33,10 @@ html {
   margin: 18px auto 0;
   padding: 12px 18px;
   border-radius: 999px;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .brand {
@@ -179,6 +184,7 @@ html {
   background-color: #050607;
   padding: 12px 20px;
   width: 100%;
+  box-sizing: border-box;
   height: auto;
   gap: 48px;
 }
@@ -190,9 +196,10 @@ html {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-align: center;
+  width: 100%;
   margin: 0;
-  padding: 0 12px;
-  white-space: nowrap;
+  padding: 0;
+  white-space: normal;
 }
 
 .tech-slideshow {
@@ -571,7 +578,7 @@ html {
   background-position: center;
 }
 
-contact-title {
+.contact-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -711,4 +718,518 @@ contact-title {
   letter-spacing: -0.03em;
   color: #a4a7ae;
   margin: 0;
+}
+
+/* Responsive Design */
+
+/* For screens smaller than 765px, stack elements vertically and adjust spacing */
+
+@media screen and (max-width: 765px) {
+  .nav {
+    display: none;
+    justfy-content: center;
+  }
+
+  .hero {
+    padding-top: 48px;
+  }
+
+  .mobile-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .mobile-nav {
+    display: flex;
+    width: calc(100% - 32px);
+    height: 48px;
+    margin-inline: 16px;
+    justify-content: space-between;
+    align-items: center;
+    /*background-transparent;*/
+    position: absolute;
+    /*background: rgb(0, 0, 0); /* Fallback color */
+    /*background: rgba(0, 0, 0, 0.4); /* Black background with 40% opacity */
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 999px;
+    color: #f1f1f1;
+  }
+
+  .mobile-nav-toggle {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  .mobile-nav-toggle img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .mobile-brand {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  /*tampilan hero di mobile, stack teks dan gambar secara vertikal, dengan teks di bawah gambar*/
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .hero-text h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: -0.06em;
+  }
+
+  .hero-text .charm-font {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .hero-text .hero-title-line {
+    display: block;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+  }
+
+  .btn-primary {
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+  }
+
+  .hero-media {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .portrait {
+    position: static;
+    width: min(100%, 320px);
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .carousell > h4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    padding: 12px 16px;
+  }
+
+  .carousell {
+    flex-wrap: nowrap;
+  }
+
+  .carousell h4 {
+    width: 100%;
+    max-width: 280px;
+    margin-inline: auto;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .tech-slideshow {
+    height: 62px;
+  }
+
+  .tech-slideshow > div {
+    height: 62px;
+    background-size: auto 62px;
+  }
+
+  /* tampilan about, about2 di mobile */
+
+  #about,
+  #about2,
+  #skills {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #about {
+    padding-bottom: 40px;
+  }
+
+  .about-me {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+
+  .media-social {
+    flex-direction: column;
+    height: 86px;
+    gap: 16px;
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 4px;
+  }
+
+  .media-social h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #a4a7ae;
+  }
+
+  .divider {
+    margin-inline: 20px;
+    width: 100%;
+  }
+
+  #about2 {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .about2-cards {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-template-rows: none;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .about2-cards img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about2-cards h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #ffffff;
+  }
+
+  .about2-cards p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #a4a7ae;
+  }
+
+  /* tampilan skills di mobile */
+
+  #skills {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .skill-title {
+    flex: none;
+    width: auto;
+    max-width: none;
+    gap: 24px;
+  }
+
+  .skill-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+  }
+
+  .skill-title p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #a4a7ae;
+  }
+
+  .btn-sendmessage {
+    width: 100%;
+    max-width: none;
+    height: 56px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .btn-sendmessage img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    object-fit: contain;
+  }
+
+  .skill-list {
+    flex: none;
+    width: 100%;
+    max-width: none;
+  }
+
+  .skill-item > img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skill-item > span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+
+  .skill-rate p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+
+  /* tampilan Portfolio di mobile */
+  #portfolio {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 24px;
+  }
+
+  #portfolio > h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+  }
+
+  #portfolio > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #a4a7ae;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-template-rows: none;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .portfolio-container figure {
+    width: 100%;
+  }
+
+  .portfolio-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-thumb {
+    width: 100%;
+  }
+
+  .portfolio-item:focus-within p {
+    color: #a4a7ae;
+  }
+
+  .portfolio-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    color: #fdfdfd;
+  }
+
+  .portfolio-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    color: #050607;
+  }
+
+  /* tampilan contact di mobile */
+
+  #contact {
+    flex-direction: column;
+    padding: 24px 20px;
+    height: auto;
+    width: 353px;
+    background-image: url(/public/glass-board-mobil.svg);
+  }
+
+  .contact-title {
+    padding-left: 0;
+    gap: 12px;
+  }
+
+  .contact-title h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+  }
+
+  .contact-title h1 span {
+    color: #14abaf;
+  }
+
+  .contact-title p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #a4a7ae;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    padding: 16px;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #fdfdfd;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #000000;
+    color: #535862;
+    border: 1px solid #22252b;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    box-sizing: border-box;
+  }
+
+  .contact-info {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .contact-info h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #fdfdfd;
+  }
+
+  .quick-links {
+    gap: 12px;
+  }
+
+  .quick-links a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #a4a7ae;
+  }
+
+  .contact-info .get-in-touch {
+    align-self: flex-start;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    margin: 0;
+  }
+
+/* Footer di mobile */
+  .footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #a4a7ae;
+    text-align: center;
+  } 
+
 }
