@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <div id="close-menu"></div>
     <header class="site-header">
       <nav class="nav" aria-label="Main Navigation">
         <a class="brand" href="#home">Antonius</a>
@@ -32,11 +33,28 @@
       </nav>
 
       <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <h1 class="mobile-brand">Antonius</h1>
-        <button class="mobile-nav-toggle" aria-controls="mobile-menu" aria-expanded="false">
+        <a class="mobile-brand" href="#home">Antonius</a>
+        <a class="mobile-nav-toggle" href="#mobile-menu" aria-controls="mobile-menu" aria-label="Open mobile menu">
           <img src="public/burger-menu.png" alt="Menu Icon" />
-        </button>
+        </a>
       </nav>
+
+      <section class="mobile-menu-overlay" id="mobile-menu" aria-label="Mobile Menu">
+        <div class="mobile-menu-panel">
+          <div class="mobile-menu-header">
+            <a class="mobile-menu-brand" href="#home">Antonius</a>
+            <a class="mobile-menu-close" href="#close-menu" aria-label="Close mobile menu">
+              <img src="public/x-close.png" alt="Close Menu Icon" />
+            </a>
+          </div>
+          <ul class="mobile-menu-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </section>
 
     </header>
 
