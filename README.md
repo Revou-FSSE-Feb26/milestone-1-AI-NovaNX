@@ -17,11 +17,11 @@ The goal of this project is to demonstrate a solid understanding of **fundamenta
 
 This project intentionally uses **pure web fundamentals**
 
-| Technology     | Description                         |
-| -------------- | ----------------------------------- |
-| HTML5          | Structure of the web pages          |
-| CSS3           | Styling, layout, and responsiveness |
-| Flexbox / Grid | Layout management                   |
+| Technology        | Description                                 |
+| ----------------- | ------------------------------------------- |
+| HTML5             | Structure of the web pages                  |
+| CSS3              | Styling, layout, and responsiveness         |
+| Flexbox / Grid    | Layout management                           |
 | Responsive design | Improving usability across all screen sizes |
 
 Explanation:
@@ -94,9 +94,9 @@ The portfolio website includes a fixed header that remains consistently position
 
 In addition, all navigation buttons are fully functional and provide seamless access to their respective page sections or destination links, allowing users to move through the website easily and efficiently. This enhances the overall <mark>**user experience (UX)**</mark> by making navigation more intuitive, accessible, and efficient throughout the website.
 
-[![Watch the demo video](public/Preview.png)](https://www.webmobilefirst.com/en/screencasts/euyo4kje92r2zb/)
+[![Watch the demo video](public/preview.png)](https://www.webmobilefirst.com/en/screencasts/euyo4kje92r2zb/)
 
-<mark>Click the image above to watch the demo video (video will open in other tab - don't forget to klik play "▶️" button)</mark>
+<mark>Click the image above to watch the demo video (video will open in other tab - don't forget to klik play " ▶️ " button)</mark>
 
 </details>
 
@@ -127,6 +127,7 @@ The layout implementation makes extensive use of **Flexbox** to create a clean, 
 The website uses buttons that combine text labels with icon images to make interactions clearer and more visually engaging. This helps users recognize the purpose of each action more quickly while keeping the interface consistent with the overall visual style of the portfolio.
 
 We add one CSS declaration to the envelope icon so that its position can align inline with the text that follows it. The CSS line is as follows:
+
 ```bash
 .btn-primary img {
   vertical-align: middle;
@@ -138,13 +139,11 @@ We add one CSS declaration to the envelope icon so that its position can align i
 <details>
     <summary><strong>6. Marquee-style logo animation</strong></summary>
 
-The website features a marquee-style logo animation that presents trusted brand identities in a continuous horizontal flow, enhancing visual engagement while reinforcing credibility and professional appeal. 
+The website features a marquee-style logo animation that presents trusted brand identities in a continuous horizontal flow, enhancing visual engagement while reinforcing credibility and professional appeal.
 
 This feature is designed not only to make the section more visually engaging, but also to communicate credibility, professionalism, and the value of strong design execution. By presenting these brand identities in a dynamic and polished way, the website highlights a sense of trust and reinforces the impression that my design and development results are dependable, refined, and worthy of professional recognition.
 
 </details>
-
-
 
 ## Future Improvements
 
