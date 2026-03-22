@@ -155,7 +155,7 @@ The website features a marquee-style logo animation that presents trusted brand 
 This feature is designed not only to make the section more visually engaging, but also to communicate credibility, professionalism, and the value of strong design execution. By presenting these brand identities in a dynamic and polished way, the website highlights a sense of trust and reinforces the impression that my design and development results are dependable, refined, and worthy of professional recognition.
 
 [![Watch the demo video](public/marquee.png)](https://www.webmobilefirst.com/en/screencasts/-nqrleyxz9_nyf/)
-<mark>Click the image above to watch the demo video (video will open in other tab - don't forget to klik play " ▶️ " button)</mark>
+<mark>Want to see the animation? Click the image above to watch the demo video (video will open in other tab - don't forget to klik play " ▶️ " button)</mark>
 </details>
 
 <details>
@@ -193,6 +193,8 @@ The website is designed with a responsive layout strategy to ensure a consistent
 **c. Breakpoin 1280px and above**
 [![Watch the demo video](public/desktop.png)](https://www.webmobilefirst.com/en/screencasts/qwi0allvs452fr/)
 <br>
+
+<mark>Click the image above to watch the demo video (video will open in other tab - don't forget to klik play " ▶️ " button)</mark>
 
 </details>
 
