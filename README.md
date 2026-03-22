@@ -182,6 +182,7 @@ The Portfolio section is built using **CSS Grid** with **`auto-fit`** to create 
 The website is designed with a responsive layout strategy to ensure a consistent and user-friendly experience across multiple device sizes. For **mobile devices** with a breakpoint of **max-width: 765px**, the layout is optimized for smaller screens by improving content flow, readability, and touch accessibility. In this mobile view, the navigation menu can be accessed through a **burger menu button** available in the header, allowing users to open and use the navigation conveniently without overcrowding the screen. For **tablet to small desktop screens**, ranging from **768px up to less than 1280px**, the interface adjusts to provide better spacing, alignment, and content balance while making fuller use of the available screen width. On **desktop screens** with a breakpoint of **1280px and above**, the layout expands to deliver a more spacious and structured presentation, allowing the content to appear more polished and visually organized. This responsive implementation demonstrates careful attention to usability, adaptability, and modern front-end development practices across a wide range of devices.
 
 **a. Breakpoin mobile phone (breakpoin max-width 765px)**
+<br>
 [![Watch the demo video](public/mobile.png)](https://www.webmobilefirst.com/en/screencasts/ffgu-uvpmk4h16/)
 <br>
 
