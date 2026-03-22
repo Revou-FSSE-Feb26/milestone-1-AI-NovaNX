@@ -198,6 +198,29 @@ The website is designed with a responsive layout strategy to ensure a consistent
 
 </details>
 
+<details>
+    <summary><strong>9. Popup Information</strong></summary>
+
+When a portfolio image is clicked, a popup modal appears to provide more detailed information about the selected project. This feature allows users to explore the portfolio in a more interactive and focused way without leaving the current page. By presenting additional project details such as context, key highlights, or supporting information in a dedicated overlay, the website offers a smoother browsing experience while keeping the interface clean and visually organized.
+
+<br>
+<p align="center">
+    <img src="public/default-state.png" alt="Default state" width="500"><br  >
+    <em>Initial state</em>
+</p>
+<br>
+<p align= "center">
+    <img src="public/when-clicked.png" alt="Popup Information" width="500"><br>
+    <em>Popup Information when a portfolio image clicked</em>
+</p><br>
+
+[![Watch the demo video](public/Popup-information.png)](https://www.webmobilefirst.com/en/screencasts/9h3w1in1o0-onn/)
+<br>
+
+<mark>Click the image above to watch the demo video (video will open in other tab - don't forget to klik play " ▶️ " button)</mark>
+
+</details>
+
 ---
 
 ## Future Improvements
