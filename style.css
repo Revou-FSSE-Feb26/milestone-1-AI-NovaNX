@@ -748,7 +748,7 @@ html {
 @media screen and (max-width: 765px) {
   .nav {
     display: none;
-    justfy-content: center;
+    justify-content: center;
   }
 
   .hero {
