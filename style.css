@@ -770,6 +770,7 @@ html {
     height: 48px;
     margin-inline: 16px;
     justify-content: space-between;
+    padding: 8px;
     align-items: center;
     /*background-transparent;*/
     position: absolute;
