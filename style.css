@@ -10,6 +10,10 @@ body {
   background-color: #050607;
 }
 
+body:has(.mobile-menu-overlay:target) {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 24px);
@@ -197,13 +201,14 @@ html {
   justify-content: center;
   background-color: #050607;
   padding: 12px 20px;
+  margin-bottom: 40px;
   width: 100%;
   box-sizing: border-box;
   height: auto;
-  gap: 48px;
+  gap: 10px;
 }
 
-.carousell h4 {
+.carousell h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 34px;
@@ -446,6 +451,7 @@ html {
   background-color: #14abaf;
   color: #fff;
   border: none;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 500;
   border-radius: 999px;
@@ -602,7 +608,7 @@ html {
   gap: 16px;
 }
 
-.contact-title h1 {
+.contact-title h2 {
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -611,7 +617,7 @@ html {
   margin: 0;
 }
 
-.contact-title h1 span {
+.contact-title h2 span {
   color: #14abaf;
 }
 
@@ -730,7 +736,7 @@ html {
   height: 80px;
   background-color: #050607;
 }
-.footer h3 {
+.footer p {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -741,11 +747,9 @@ html {
 
 /* Responsive Design */
 
+/* For screens smaller than 767px, stack elements vertically and adjust spacing */
 
-
-/* For screens smaller than 765px, stack elements vertically and adjust spacing */
-
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 767px) {
   .nav {
     display: none;
     justify-content: center;
@@ -961,7 +965,7 @@ html {
     margin-bottom: 20px;
   }
 
-  .carousell > h4 {
+  .carousell > h2 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -976,7 +980,7 @@ html {
     flex-wrap: nowrap;
   }
 
-  .carousell h4 {
+  .carousell h2 {
     width: 100%;
     max-width: 280px;
     margin-inline: auto;
@@ -1233,7 +1237,7 @@ html {
     box-sizing: border-box;
   }
 
-  .contact-title h1 {
+  .contact-title h2 {
     font-size: 32px;
     font-weight: 700;
     line-height: 42px;
@@ -1241,7 +1245,7 @@ html {
     color: #ffffff;
   }
 
-  .contact-title h1 span {
+  .contact-title h2 span {
     color: #14abaf;
   }
 
@@ -1346,7 +1350,7 @@ html {
     padding: 20px;
   }
 
-  .footer h3 {
+  .footer p {
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -1355,10 +1359,8 @@ html {
     text-align: center;
   }
 }
-
+//Tablet and small desktop screens (768px to 1279px)
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  
-
   .nav {
     margin: 18px 0 0 20px;
   }
@@ -1382,67 +1384,66 @@ html {
   /* Hero Section */
 
   .hero-inner {
-  display: flex;
-  width: 50%;
-  height: auto;
-  padding-left: 20px;
-  padding-top: 100px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-}
+    display: flex;
+    width: 50%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
 
-.hero-inner p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #fdfdfd;
-  letter-spacing: -0.03em;
-}
+  .hero-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fdfdfd;
+    letter-spacing: -0.03em;
+  }
 
-.hero-inner h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 68px;
-  letter-spacing: -0.06em;
-  font-color: #ffff;
-}
+  .hero-inner h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: -0.06em;
+    font-color: #ffff;
+  }
 
-.hero-title-line {
-  display: block;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 68px;
-  letter-spacing: -0.03em;
-}
+  .hero-title-line {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: -0.03em;
+  }
 
-.charm-font {
-  font-family: "Charm", cursive;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 68px;
-  letter-spacing: -0.06em;
-}
+  .charm-font {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: -0.06em;
+  }
 
-.portrait {
-  position: absolute;
-  top: -36px;
-  right: 20px;
-  width: 300px;
-  z-index: 1;
-  height: 671px;
-}
+  .portrait {
+    position: absolute;
+    top: -36px;
+    right: 20px;
+    width: 300px;
+    z-index: 1;
+    height: 671px;
+  }
 
-.btn-primary {
-  width: 287px;
-  height: 48px;
-  margin-left: 20px;
-  margin-top: 62px;
-  margin-bottom: 100px;
-  
-}
+  .btn-primary {
+    width: 287px;
+    height: 48px;
+    margin-left: 20px;
+    margin-top: 62px;
+    margin-bottom: 100px;
+  }
 
-  .carousell > h4 {
+  .carousell > h2 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1457,7 +1458,7 @@ html {
     flex-wrap: nowrap;
   }
 
-  .carousell h4 {
+  .carousell h2 {
     width: 100%;
     max-width: 280px;
     margin-inline: auto;
@@ -1674,4 +1675,4 @@ html {
     height: auto;
     margin-inline: auto;
   }
-} 
+}

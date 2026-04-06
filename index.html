@@ -19,8 +19,7 @@
   </head>
 
   <body>
-    <div id="close-menu"></div>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <nav class="nav" aria-label="Main Navigation">
         <a class="brand" href="#home">Antonius</a>
 
@@ -34,29 +33,37 @@
 
       <nav class="mobile-nav" aria-label="Mobile Navigation">
         <a class="mobile-brand" href="#home">Antonius</a>
-        <a class="mobile-nav-toggle" href="#mobile-menu" aria-controls="mobile-menu" aria-label="Open mobile menu">
+        <a
+          class="mobile-nav-toggle"
+          href="#mobile-menu"
+          aria-controls="mobile-menu"
+          aria-label="Open mobile menu"
+        >
           <img src="public/burger-menu.png" alt="Menu Icon" />
         </a>
       </nav>
-
-      <section class="mobile-menu-overlay" id="mobile-menu" aria-label="Mobile Menu">
-        <div class="mobile-menu-panel">
-          <div class="mobile-menu-header">
-            <a class="mobile-menu-brand" href="#home">Antonius</a>
-            <a class="mobile-menu-close" href="#close-menu" aria-label="Close mobile menu">
-              <img src="public/x-close.png" alt="Close Menu Icon" />
-            </a>
-          </div>
-          <ul class="mobile-menu-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skill</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </section>
-
     </header>
+
+    <div class="mobile-menu-overlay" id="mobile-menu">
+      <nav class="mobile-menu-panel" aria-label="Mobile Menu">
+        <div class="mobile-menu-header">
+          <a class="mobile-menu-brand" href="#home">Antonius</a>
+          <a
+            class="mobile-menu-close"
+            href="#site-header"
+            aria-label="Close mobile menu"
+          >
+            <img src="public/x-close.png" alt="Close Menu Icon" />
+          </a>
+        </div>
+        <ul class="mobile-menu-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <section id="home" class="hero">
@@ -85,13 +92,15 @@
         <a class="btn-primary" href="#contact">
           <span> <img src="public/Mail.png" alt="Email Icon" /> </span>Hire Me
         </a>
+      </section>
 
-        <section class="carousell">
-          <h4>Trusted by Global Innovators & Leading Brands</h4>
-          <div class="tech-slideshow">
-            <div class="mover-1"></div>
-          </div>
-        </section>
+      <section class="carousell" aria-labelledby="trusted-brands-title">
+        <h2 id="trusted-brands-title">
+          Trusted by Global Innovators & Leading Brands
+        </h2>
+        <div class="tech-slideshow">
+          <div class="mover-1"></div>
+        </div>
       </section>
 
       <section id="about">
@@ -183,13 +192,10 @@
               into real products
             </p>
           </div>
-             <a
-               class="btn-sendmessage"
-               href="#contact"
-             >
-               <span> <img src="public/Mail.png" alt="Mail Icon" /> </span>Send
-               Message
-             </a>
+          <a class="btn-sendmessage" href="#contact">
+            <span> <img src="public/Mail.png" alt="Mail Icon" /> </span>Send
+            Message
+          </a>
         </div>
         <div class="skill-list">
           <div class="skill-container">
@@ -357,8 +363,12 @@
 
       <section id="contact">
         <div class="contact-title">
-          <form class="contact-form">
-            <h1>Let's <span>Build Something </span>Great</h1>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xzdakekn"
+            method="post"
+          >
+            <h2>Let's <span>Build Something </span>Great</h2>
             <p>
               Got an idea, a project, or just want to connect? I'm always open
               to new conversations.
@@ -391,13 +401,10 @@
               required
             ></textarea>
 
-            <a
-              class="btn-sendmessage"
-              href="mailto:your-email@example.com?subject=Portfolio%20Inquiry"
-            >
+            <button class="btn-sendmessage" type="submit">
               <span> <img src="public/Mail.png" alt="Mail Icon" /> </span>Send
               Message
-            </a>
+            </button>
           </form>
         </div>
 
@@ -411,44 +418,43 @@
               <li><a href="#portfolio">Portfolio</a></li>
             </ul>
           </div>
-          
-          <div class="Social Media">
+
+          <div class="social-media">
             <h2>Social Media</h2>
             <div class="media-social-icon">
-            <a
-              href="https://facebook.com/antonius"
-              aria-label="Facebook Profile"
-            >
-              <img src="public/Facebook.svg" alt="Facebook Icon" />
-            </a>
-            <a
-              href="https://www.instagram.com/antonius"
-              aria-label="Instagram Profile"
-            >
-              <img src="public/Instagram.svg" alt="Instagram Icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/antonius"
-              aria-label="LinkedIn Profile"
-            >
-              <img src="public/Linkedin.svg" alt="LinkedIn Icon" />
-            </a>
-            <a
-              href="https://dribbble.com/antonius"
-              aria-label="Dribbble Profile"
-            >
-              <img src="public/Dribble.svg" alt="Dribbble Icon" />
-            </a>
-          </div>
+              <a
+                href="https://facebook.com/antonius"
+                aria-label="Facebook Profile"
+              >
+                <img src="public/Facebook.svg" alt="Facebook Icon" />
+              </a>
+              <a
+                href="https://www.instagram.com/antonius"
+                aria-label="Instagram Profile"
+              >
+                <img src="public/Instagram.svg" alt="Instagram Icon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/antonius"
+                aria-label="LinkedIn Profile"
+              >
+                <img src="public/Linkedin.svg" alt="LinkedIn Icon" />
+              </a>
+              <a
+                href="https://dribbble.com/antonius"
+                aria-label="Dribbble Profile"
+              >
+                <img src="public/Dribble.svg" alt="Dribbble Icon" />
+              </a>
+            </div>
           </div>
           <h3 class="get-in-touch">GET IN TOUCH</h3>
         </div>
-        </div>  
       </section>
     </main>
 
     <footer class="footer">
-      <h3>&copy; 2026 Antonius. All rights reserved.</h3>
+      <p>&copy; 2026 Antonius. All rights reserved.</p>
     </footer>
   </body>
 </html>
