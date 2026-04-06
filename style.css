@@ -1359,7 +1359,7 @@ html {
     text-align: center;
   }
 }
-//Tablet and small desktop screens (768px to 1279px)
+/*Tablet and small desktop screens (768px to 1279px) */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .nav {
     margin: 18px 0 0 20px;
